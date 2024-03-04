@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <title>University of Cincinnati Bearcat Inquiry Chabot</title>
+  <body>
+    <div style="width:500px;margin: auto;border: 1px solid black;padding:10px">
+    <form action="{{url_for('startinquiry')}}" method="POST">
+      <h1>University of Cincinnati Inquiry Chatbot </h1>
+      <div class="icon">
+	 <i class="fas fa-user-circle"></i>
+      </div>
+	  
+      <div class="formcontainer">
+      <div class="container">
+		<div>{{ message }}</div> <br><br>
+        <label for="ufname"><strong>First Name:</strong></label>
+        <input type="text" placeholder="First Name" name="ufname" required><br><br>
+	  <label for="ulname"><strong>Last Name:</strong></label>
+        <input type="text" placeholder="Last Name" name="ulname" required><br><br>
+        <label for="mail"><strong>E-mail:</strong></label>
+        <input type="text" placeholder="E-mail" name="mail" required><br><br>
+      </div><br><br>
+      <button type="submit"><strong>START CHAT WITH BEARCAT BOT</strong></button>
+    </form>
+    </div>
+  </body>
+</html>
